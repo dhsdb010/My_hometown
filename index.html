@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My hometown, Seoul</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="top_banner">
+        <h1 id="title">Seoul. 서울</h1>
+        <h2 id="subtitle">The capital of Korea. 대한민국의 수도</h2>
+    </div>
+    <div id="middle_info">
+        <h1 id="title">Places you should visit. 당신이 방문해야 할 장소들</h1>
+        <h2 id="subtitle">My personal recommendations. 나의 개인적인 추천들</h2>
+        <div class="cards-container">
+            <button class="scroll-btn left-btn" onclick="scrollCards(-1)">&#10094;</button>
+            <div class="cards">
+                <div id="card1">
+                    <div class="card_image" id="ddp"></div>
+                    <h2><a href="ddp.html" id="link">DDP. 동대문디자인프라자</a></h2>
+                    <p>Dongdaemun Design Plaza (DDP) is a landmark that represents Seoul's creative industries and
+                        design culture. </p>
+                    <p>동대문 디자인 플라자(DDP)는 서울의 창작 산업과 디자인 문화를 대표하는 랜드마크입니다. </p>
+                </div>
+                <div id="card2">
+                    <div class="card_image" id="namsan"></div>
+                    <h2><a href="namsan.html" id="link">Namsan Tower. 남산타워</a></h2>
+                    <p>Namsan Tower (officially N Seoul Tower) is Seoul's iconic landmark, a communication and
+                        observation tower on Namsan Mountain offering stunning 360-degree views of the city</p>
+                    <p>남산타워(공식명: N 서울타워)는 서울의 아이콘적인 랜드마크로, 남산산맥에 위치한 통신 및 관찰 타워로, 도시의 화려한 360도의 시야를 제공합니다.</p>
+                </div>
+                <div id="card3">
+                    <div class="card_image" id="lotte"></div>
+                    <h2><a href="lotte.html" id="link">Lotte Tower. 롯데월드타워</a></h2>
+                    <p>Lotte World Tower is a 555-meter tall, 123-story skyscraper in Seoul, South Korea, and the
+                        tallest building in south korea</p>
+                    <p>롯데월드타워는 대한민국 서울에 위치한 555미터 높이의 123층 초고층 빌딩으로, 대한민국에서 가장 높은 건물입니다</p>
+                </div>
+                <div id="card4">
+                    <div class="card_image" id="Gwanghwamun_Gate"></div>
+                    <h2><a href="Gwanghwamun.html" id="link">Gwanghwamun. 광화문</a></h2>
+                    <p>Gwanghwamun is the grand main gate of Seoul's historic Gyeongbokgung Palace</p>
+                    <p>광화문은 서울의 역사적인 경복궁의 웅장한 정문입니다</p>
+                </div>
+                <div id="card5">
+                    <div class="card_image" id="hangang"></div>
+                    <h2><a href="hangang.html" id="link">Hangang. 한강</a></h2>
+                    <p>Hangang is the Han River, a major river flowing through Seoul, South Korea</p>
+                    <p>한강은 대한민국 서울을 흐르는 주요 강으로, 서울의 중심부를 흐르는 강입니다</p>
+                </div>
+                <div id="card6">
+                    <div class="card_image" id="building_63"></div>
+                    <h2><a href="building.html" id="link">63 Building. 63 빌딩</a></h2>
+                    <p>The 63 Building (Hanwha 63 City) is a famous golden skyscraper landmark in Seoul, South Korea, on
+                        Yeouido island</p>
+                    <p>63 빌딩 (한화 63시티)는 대한민국 서울의 유명한 금빛 초고층 빌딩 랜드마크로, 여의도 섬에 위치한 랜드마크입니다</p>
+                </div>
+            </div>
+            <button class="scroll-btn right-btn" onclick="scrollCards(1)">&#10095;</button>
+        </div>
+    </div>
+    <script>
+        function scrollCards(direction) {
+            const container = document.querySelector('.cards');
+            const scrollAmount = 350;
+            container.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <div id="footer">
+        <p>My Hometown, Seoul ____ made by Onyu Choi, dhsdb010@gmail.com ____ &copy; 2025 My Hometown, Seoul. All rights
+            reserved.</p>
+    </div>
+</body>
+
+</html>

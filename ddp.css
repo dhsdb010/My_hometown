@@ -1,0 +1,60 @@
+body {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+#top_banner {
+    width: 100%;
+    height: 850px;
+    background-image: url("images/ddp6.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h2 {
+    padding: 4px 6px;
+    background: white;
+    border-radius: 3px;
+    margin: 10px 0;
+    color: black;
+}
+
+.image {
+    width: 100%;
+    height: 850px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin: 5px 0 5px 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+#ddp3 {
+    background-image: url("images/ddp3.jpg");
+}
+
+#ddp4 {
+    background-image: url("images/ddp4.jpg");
+}
+
+#ddp5 {
+    background-image: url("images/ddp5.jpg");
+}
+
+p {
+    margin: 10px 0 0 10px;
+}
